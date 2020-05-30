@@ -1,0 +1,73 @@
+/* buttons */
+.btn{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid transparent;
+	text-align: center;
+	border-radius: $btn-border-radius-base;
+	font-weight: $btn-font-weight;
+	font-size: $btn-font-size;
+	line-height: $btn-line-height;
+	padding: 10px 5px;
+	color: $white;
+	width: 100%;
+	max-width: 160px;
+	transition: .3s;
+	&.active:focus,
+	&.active:hover,
+	&:focus,
+	&:active,
+	&:hover{
+		box-shadow: none;
+		outline: none;
+		color:#fff;
+	}
+	&__contact{
+		min-width: 120px;
+		max-width: initial;
+		border: 1px solid $white;
+		padding: 9px 5px;
+		font-size: 14px;
+		line-height: 18px;
+		@include media ('<phone') {
+			min-width: 97px;
+		}
+		&:hover{
+			color: $stale;
+			background: $white;
+		}
+
+	}
+
+}
+.btn-default{
+	background: transparent;
+	border: 1px solid $white;
+	min-width: 160px;
+	padding: 15px 5px;
+	&.active:focus,
+	&.active:hover,
+	&:focus,
+	&:active,
+	&:hover{
+		background: $white;
+		color: $mantis;
+	}
+	@include media ('<tablet'){
+		display: block;
+		max-width: 330px;
+		margin: 0 auto;
+	}
+}
+.btn_green{
+	background: $mantis;
+	&:hover{
+		background: transparent;
+		color: $mantis;
+		box-shadow: inset 0px 0px 0px 1px rgba(123,195,78,1);
+	}
+
+
+}
+/*end btn*/

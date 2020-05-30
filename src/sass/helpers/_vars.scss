@@ -1,0 +1,51 @@
+// vars
+$fonts: '../fonts/';
+$images: '../images/';
+
+// fonts
+$HiraginoSans: Hiragino Sans, "ヒラギノ角ゴシック", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", Roboto, "Droid Sans",
+			YuGothic, "游ゴシック", Meiryo, "メイリオ", Verdana, "ＭＳ Ｐゴシック", sans-serif;
+
+$breakpoints: (
+	phone-xs: 375px,
+	phone: 768px,
+	tablet: 992px,
+	desktop: 1200px,
+	desktop_lg: 1400px,
+);
+
+// font settings
+$grid-gutter-width: 15px;
+$container-large-desktop: 1270px;
+
+$font-family-base: 'Roboto', sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.25;
+$font-size-h1: 64px;
+$font-size-h2: 46px;
+$font-size-h3: 36px;
+$font-size-h4: 20px;
+
+$paragraph-spacing: 0 0 15px;
+
+$hover-opacity: 0.8;
+$time-animation: 0.3s;
+
+// colors
+$white: #fff;
+$black: #000;
+$gray: #333;
+$mantis: #7BC34E;
+$stale: #67758D;
+
+$base-color: $stale;
+$body-bg: $white;
+
+$link-color: $black;
+
+$btn-color: $black;
+$btn-border-radius-base: 30px;
+$btn-font-size: 16px;
+$btn-line-height: 18px;
+$btn-font-weight: 600;
+$btn-min-width: 205px;

@@ -1,0 +1,57 @@
+/* main-nav */
+.main-nav{
+	@include media("<tablet") {
+		display: none;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 280px;
+		right: -280px;
+		background: $black;
+		z-index: 100;
+		transition: right .5s;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	@include media("<phone") {
+		width: 260px;
+		right: -260px;
+	}
+
+	&__list{
+		display: flex;
+		li{
+			margin-right: 35px;
+			a{
+				font-size: 18px;
+				line-height: 21px;
+				font-weight: 500;
+				display: block;
+				position: relative;
+				padding: 35px 0;
+				color:#fff;
+				white-space: nowrap;
+				transition: .3s;
+				&:after{
+					content: '';
+					position: absolute;
+					bottom: 30px;
+					left: 0;
+					width: 0;
+					height: 1px;
+					background: #fff;
+					transition: .3s;
+				}
+				&:hover{
+
+					&:after{
+						width: 100%;
+					}
+				}
+			}
+			
+		}
+	}
+
+}
